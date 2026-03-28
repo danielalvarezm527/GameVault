@@ -1,4 +1,4 @@
-export const gameList = [
+export const GAME_LIST = [
   {
     id: '1',
     game_name: 'God of War Ragnarök',
