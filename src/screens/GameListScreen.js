@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { View, Text, FlatList, TouchableOpacity, ActivityIndicator } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import {game_list} from "../data/data";
+import {gameList} from "../data/data";
 import {styles} from "../styles/GameListStyles";
 
 const GameListScreen = ({navigation}) => {
@@ -11,7 +11,7 @@ const GameListScreen = ({navigation}) => {
 
   useEffect(() => {
     setTimeout(() => {
-      setGames(game_list);
+      setGames(gameList);
       setLoading(false);
     }, 1500);
   }, []);
