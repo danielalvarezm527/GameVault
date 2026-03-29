@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import {styles} from "../styles/AddGameStyles";
 
-const AddGameScreen = ({navigation}) => {
+const AddGameScreen = () => {
   const [gameName, setGameName] = useState("");
   const [platform, setPlatform] = useState("");
   const [genre, setGenre] = useState("");

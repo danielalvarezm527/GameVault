@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import {styles} from "../styles/GameDetailStyles";
 
 const GameDetailScreen = ({navigation, route}) => {
-  const {game_name, platform, genre, price, age_rating, multiplayer, emoji, description} = route.params.game;
+  const {gameName, platform, genre, price, ageRating, multiplayer, emoji, description} = route.params.game;
 
   const [like, setLike] = useState(false);
   const [likeMessage, setLikeMessage] = useState('');
@@ -22,7 +22,7 @@ const GameDetailScreen = ({navigation, route}) => {
         </View>
 
         <View style={styles.card}>
-          <Text style={styles.gameTitle}>{game_name}</Text>
+          <Text style={styles.gameTitle}>{gameName}</Text>
           <View style={styles.row}>
             <Text style={styles.label}>Plataforma</Text>
             <View style={styles.platformBadge}>
@@ -39,7 +39,7 @@ const GameDetailScreen = ({navigation, route}) => {
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Clasificación</Text>
-            <Text style={styles.value}>{age_rating}</Text>
+            <Text style={styles.value}>{ageRating}</Text>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Modo de juego</Text>

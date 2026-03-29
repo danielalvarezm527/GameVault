@@ -26,7 +26,7 @@ const GameListScreen = ({navigation}) => {
           <Text style={styles.emoji}>{item.emoji}</Text>
         </View>
         <View style={styles.cardInfo}>
-          <Text style={styles.cardTitle}>{item.game_name}</Text>
+          <Text style={styles.cardTitle}>{item.gameName}</Text>
           <View style={styles.cardMeta}>
             <View style={styles.platformBadge}>
               <Text style={styles.platformText}>{item.platform}</Text>
