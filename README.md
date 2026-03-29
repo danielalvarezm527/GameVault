@@ -16,6 +16,7 @@ GameVault es una aplicación móvil de catálogo para una tienda de videojuegos.
 - React Native
 - React 19.2.3
 - React Navigation (Stack + Bottom Tabs)
+- JavaScript / React Hooks
 - react-native-safe-area-context
 
 ---
@@ -45,10 +46,10 @@ cd ios && pod install && cd ..
 
 **iOS:**
 ```sh
-npx run-ios
+npx react-native run-ios
 ```
 
 **Android:**
 ```sh
-npx run-android
+npx react-native run-android
 ```
